@@ -1,0 +1,27 @@
+{
+  "name": "awsexample",
+  "version": "0.0.1",
+  "description": "AWS SNS Example",
+  "main": "index.js",
+  "scripts": {
+    "runN": "nodemon index.js",
+    "runS": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanGL16/AWSExample.git"
+  },
+  "author": "Iván Gómez Luis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanGL16/AWSExample/issues"
+  },
+  "homepage": "https://github.com/IvanGL16/AWSExample#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1013.0",
+    "colors": "^1.4.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
