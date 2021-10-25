@@ -1,4 +1,5 @@
 {
     "region":  "us-west-2",
-    "profile": "default"
+    "profile": "default",
+    "apiVersion": "2010-03-31"
 }
