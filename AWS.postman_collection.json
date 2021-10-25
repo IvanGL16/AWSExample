@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "64546376-2c75-4170-b136-3c5c1fcbd89c",
+		"name": "AWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "message",
+							"value": "Mensaje Transactional",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "Phone number",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5050/smsExample/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"smsExample",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Type",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "type",
+							"value": "Promotional",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5050/smsExample/type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"smsExample",
+						"type"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "+",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/smsExample/type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"smsExample",
+						"type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Opt Out",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "phone",
+							"value": "Phone numer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5050/smsExample/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"smsExample",
+						"check"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Transactional",
+			"value": "Transactional"
+		}
+	]
+}
